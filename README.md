@@ -5,7 +5,9 @@ O programa em si é um CRUD que utiliza o Mongodb como banco de dados, e Python 
 PySimpleGui para interface gráfica.
 
 Para inciar o programa, basta executar o arquivo app.py
+
 Quando o programa abrir, escolha a opção login, e use os seguintes dados:
+
 ------------------------
 Email: teste@gmail.com
 Senha: senhasuperdificil
