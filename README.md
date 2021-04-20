@@ -23,3 +23,5 @@ Requisitos e módulos para rodar o projeto:
 - hashlib.......
 
 Muito obrigado por visitar o projeto!
+
+Github do autor: https://github.com/Thalessns
