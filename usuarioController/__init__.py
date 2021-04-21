@@ -128,7 +128,7 @@ class UsuarioController:
         # Criando a Janela
         consulta = self.tl.Window('Consulta', consultLayout, size=(800, 260));
         # Criando Loop da Janela
-        while True:
+        while True:__init__
             # Variaveis que vão armazenar ações e valores
             evento, valores = consulta.read();
             # Saindo do programa
@@ -179,8 +179,6 @@ class UsuarioController:
                         int(valores[0][0][0]);
                         # Pegando o código
                         cod = valores[0][0][0];
-                        if cod == '1':
-                            raise Exception(self.uteis.texto('alterar'));
                         # Pedindo confirmação se exclusão
                         if self.confirma(f'Deseja mesmo alterar o registro {cod}? ') == False:
                             raise Exception('Alteração cancelada!');
