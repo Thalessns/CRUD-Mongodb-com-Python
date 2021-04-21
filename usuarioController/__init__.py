@@ -297,7 +297,7 @@ class UsuarioController:
                             raise Exception(result);
                     except Exception as error:
                         # Mostrando mensagem de erro
-                        self.popUp(result);
+                        self.popUp(error);
                     else:
                         self.popUp('Login efetuado com sucesso!');
                         # Fechando a janela
