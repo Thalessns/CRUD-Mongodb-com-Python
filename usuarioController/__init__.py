@@ -1,5 +1,6 @@
 # Classe Controller, Vai Exigir as informações
 class UsuarioController:
+    
     # importando módulos essenciais
     import PySimpleGUI as tl;
     from usuario import Usuario;
