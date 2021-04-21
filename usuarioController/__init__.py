@@ -145,8 +145,6 @@ class UsuarioController:
                         int(valores[0][0][0]);
                         # Pegando o código
                         cod = valores[0][0][0];
-                        if cod == '1':
-                            raise Exception(self.uteis.texto('excluir'));
                         # Pedindo confirmação se exclusão
                         if self.confirma(f'Deseja mesmo excluir o registro {cod}? ') == False:
                             raise Exception('Exclusão cancelada!');
