@@ -44,24 +44,19 @@ while True:
     if escolha == 'Sair' or escolha == tl.WIN_CLOSED:
         if user.confirma(f'{username}, tem certeza que deseja sair?') == True:
             break;
-    # Funções se o usuário estiver logado
-    elif username == 'Convidado':
-        # Rodando Função de Login
-        if escolha == 'Login':
-            result = user.login();
-            logado = result;
-        # Mostrando mensagem de erro
-        else:
-            user.popUp('Você precisa estar logado para poder realizar esta ação!');
-    elif username != 'Convidado':
-        # Rodando Função de Cadastro
-        if escolha == 'Cadastrar':
-            user.cadastrar();
-        # Rodando Função de Consulta
-        elif escolha == 'Consultar':
-            user.consultar();
-        # Fazendo logout de usuário
-        elif escolha == 'Logout':
+    # Rodando Função de Login
+    if escolha == 'Login':
+        result = user.login();
+        logado = result;
+    # Rodando Função de Cadastro
+    if escolha == 'Cadastrar':
+        user.cadastrar();
+    # Rodando Função de Consulta
+    elif escolha == 'Consultar':
+        user.consultar();
+    # Fazendo logout de usuário
+    elif escolha == 'Logout':
+        if logado != False:
             # Removendo usuário logado
             logado = False;
             # Mostrando mensagem
@@ -72,4 +67,4 @@ while True:
                 logado = False;
         else:
             # Mostrando mensagem
-            user.popUp('Você já está logado!');
+            user.popUp('Você não está logado!');
