@@ -1,7 +1,9 @@
 # Classe Usuário que vai cuidar do BackEnd e responder a UsuarioController
 class Usuario:
+    
     # Importando módulo essencial
     import uteis;
+    
     # Função construtura que prepara as variaveis essenciais da classe
     def __init__(self, nome='', email='', senha=''):
         # Pegando valores
