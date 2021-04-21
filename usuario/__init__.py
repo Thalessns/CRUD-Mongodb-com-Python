@@ -2,7 +2,6 @@
 class Usuario:
     # Importando módulo essencial
     import uteis;
-
     # Função construtura que prepara as variaveis essenciais da classe
     def __init__(self, nome='', email='', senha=''):
         # Pegando valores
@@ -112,6 +111,7 @@ class Usuario:
             return f'Erro no login: {error}';
         else:
             return reg;
+                                 
     # Função que vai gerar um novo código para cadastro
     def novoCod(self):
         # Contador
