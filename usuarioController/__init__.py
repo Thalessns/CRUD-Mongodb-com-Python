@@ -128,7 +128,7 @@ class UsuarioController:
         # Criando a Janela
         consulta = self.tl.Window('Consulta', consultLayout, size=(800, 260));
         # Criando Loop da Janela
-        while True:__init__
+        while True:
             # Variaveis que vão armazenar ações e valores
             evento, valores = consulta.read();
             # Saindo do programa

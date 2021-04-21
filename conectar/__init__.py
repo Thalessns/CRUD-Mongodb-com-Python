@@ -10,7 +10,7 @@ def conectar():
         # Senha de usuário
         password    = parse.quote_plus('senha_do_usuario');
         # Nome do cluster
-        cluster     = parse.quote_plus('nome_do_cluster');
+        cluster     = 'nome_do_cluster';
         # Conectando
         conexao     = MongoClient(f'mongodb+srv://{user}:{password}@{cluster}.ij7sq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
     except Exception as error:
